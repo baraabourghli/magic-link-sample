@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Magiclinksample</title>
+    
+  </head>
+
+  <body>
+    <p> Hello <%= params[:email] %>! </p>
+    <%= button_to "Send me a magic link", {action: "send_magic_link"}, {onClick: "showMagicLink()"} %>
+    <div id="magicLinkDIV" style="display: none;"> <p> Your magic link is <a href="/authenticate?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c">here</a> </p> </div>
+  </body>
+</html>
